@@ -40,3 +40,19 @@
 .badge:hover {
   transform: scale(1.08) rotate(6deg);
 }
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#cert-slider {
+  scroll-snap-type: x mandatory;
+}
+
+#cert-slider > div {
+  scroll-snap-align: center;
+}

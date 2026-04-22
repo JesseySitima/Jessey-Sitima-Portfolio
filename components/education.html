@@ -3,12 +3,9 @@
   id="education"
   class="py-24 bg-white dark:bg-zinc-900 border-t border-zinc-100 dark:border-zinc-800"
 >
-
   <div class="max-w-7xl mx-auto px-8">
-
     <!-- HEADER -->
     <div class="flex justify-between items-end mb-12 flex-wrap gap-6">
-
       <div>
         <span class="text-[#0A66C2] text-sm font-semibold tracking-widest">
           04 — FOUNDATION
@@ -19,7 +16,6 @@
         </h2>
       </div>
 
-      <!-- DOWNLOAD ALL -->
       <a
         href="../certificates/Degree-n-Certificates-Jessey-Sitima.pdf"
         download
@@ -28,257 +24,253 @@
         <i class="fa-solid fa-download"></i>
         Download All Certificates
       </a>
-
     </div>
 
-    <!-- GRID -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- SLIDER WRAPPER -->
+    <div class="relative px-0 md:px-16">
+      <!-- MOBILE SWIPE HINT -->
+      <div class="md:hidden flex justify-end mb-3 pr-2">
+        <span
+          class="text-[11px] font-medium text-[#0A66C2] bg-[#0A66C2]/10 border border-[#0A66C2]/20 px-3 py-1 rounded-full"
+        >
+          Swipe for more
+        </span>
+      </div>
+      <!-- LEFT BUTTON -->
+      <button
+        id="cert-prev"
+        class="hidden md:flex absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition"
+      >
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
 
-      <!-- DEGREE -->
-      <div class="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl hover:-translate-y-2 transition-all">
+      <!-- RIGHT BUTTON -->
+      <button
+        id="cert-next"
+        class="hidden md:flex absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition"
+      >
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
 
-        <div class="flex items-start justify-between mb-6">
+      <!-- SCROLL ROW -->
+      <div
+        id="cert-slider"
+        class="flex gap-4 sm:gap-6 overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory px-2"
+      >
+        <!-- CARD TEMPLATE -->
+        <!-- DEGREE -->
+        <div
+          class="snap-center flex-shrink-0 w-full w-[78vw] sm:w-[340px] p-7 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl transition flex flex-col"
+        >
+          <div class="flex items-start justify-between mb-5">
+            <div
+              class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center text-4xl"
+            >
+              🎓
+            </div>
 
-          <div class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center text-4xl">
-            🎓
+            <span
+              class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full"
+            >
+              Verified
+            </span>
           </div>
 
-          <span class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full">
-            Verified
-          </span>
+          <h3 class="font-semibold text-xl mb-2">
+            Bachelor of Electronics and Computer Engineering (Honours)
+          </h3>
 
+          <p class="text-zinc-500 dark:text-zinc-400">
+            Malawi University of Business and Applied Sciences
+          </p>
+
+          <p class="text-sm text-zinc-600 dark:text-zinc-300 mt-3">
+            • Graduated 2023
+          </p>
+
+          <!-- PUSH BUTTONS TO BOTTOM -->
+          <div class="mt-auto pt-6 flex gap-3">
+            <a
+              href="../certificates/JSitima-Degree.pdf"
+              target="_blank"
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition"
+            >
+              View
+            </a>
+
+            <a
+              href="../certificates/JSitima-Degree.pdf"
+              download
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
+          </div>
         </div>
 
-        <h3 class="font-semibold text-xl mb-2">
-          Bachelor of Electronics and Computer Engineering (Honours)
-        </h3>
+        <!-- R CERT -->
+        <div
+          class="snap-center flex-shrink-0 w-full w-[78vw] sm:w-[340px] p-7 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl transition flex flex-col"
+        >
+          <div class="flex items-start justify-between mb-5">
+            <div
+              class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center text-4xl"
+            >
+              📊
+            </div>
 
-        <p class="text-zinc-500 dark:text-zinc-400">
-          Malawi University of Business and Applied Sciences
-        </p>
-
-        <p class="text-sm text-zinc-600 dark:text-zinc-300 mt-4">
-          • Graduated 2023
-        </p>
-
-        <!-- BUTTONS -->
-        <div class="flex gap-3 mt-8">
-
-          <a
-            href="../certificates/JSitima-Degree.pdf"
-            target="_blank"
-            class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-          >
-            View Degree
-          </a>
-
-          <a
-            href="../certificates/JSitima-Degree.pdf"
-            download
-            class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-          >
-            <i class="fa-solid fa-download"></i>
-            Download
-          </a>
-
-        </div>
-
-      </div>
-
-      <!-- R CERT -->
-      <div class="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl hover:-translate-y-2 transition-all">
-
-        <div class="flex items-start justify-between mb-6">
-
-          <div class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center text-4xl">
-            📊
+            <span
+              class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full"
+            >
+              Verified
+            </span>
           </div>
 
-          <span class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full">
-            Verified
-          </span>
+          <h3 class="font-semibold text-xl mb-2">
+            R for Data Science Certificate
+          </h3>
+          <p class="text-zinc-500 dark:text-zinc-400">IBM • Issued 2026</p>
 
+          <div class="mt-auto pt-6 flex gap-3">
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition"
+            >
+              View
+            </a>
+
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
+          </div>
         </div>
 
-        <h3 class="font-semibold text-xl mb-2">
-          R for Data Science Certificate
-        </h3>
+        <!-- PYTHON -->
+        <div
+          class="snap-center flex-shrink-0 w-full w-[78vw] sm:w-[340px] p-7 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl transition flex flex-col"
+        >
+          <div class="flex items-start justify-between mb-5">
+            <div
+              class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                class="w-8 h-8"
+              />
+            </div>
 
-        <p class="text-zinc-500 dark:text-zinc-400">
-          IBM • Issued 2026
-        </p>
-
-        <div class="flex gap-3 mt-8">
-
-          <a
-            href="../certificates/JSitima-R for Data Sceince Certificate.pdf"
-            target="_blank"
-            class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-          >
-            View Certificate
-          </a>
-
-          <a
-            href="../certificates/JSitima-R for Data Sceince Certificate.pdf"
-            download
-            class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-          >
-            <i class="fa-solid fa-download"></i>
-            Download
-          </a>
-
-        </div>
-
-      </div>
-
-      <!-- PYTHON -->
-      <div class="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl hover:-translate-y-2 transition-all">
-
-        <div class="flex items-start justify-between mb-6">
-
-          <div class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-              class="w-8 h-8"
-              alt="Python"
-            />
+            <span
+              class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full"
+            >
+              Verified
+            </span>
           </div>
 
-          <span class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full">
-            Verified
-          </span>
+          <h3 class="font-semibold text-xl mb-2">
+            Python for Data Science Certificate
+          </h3>
+          <p class="text-zinc-500 dark:text-zinc-400">IBM • Issued 2026</p>
 
+          <div class="mt-auto pt-6 flex gap-3">
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition"
+            >
+              View
+            </a>
+
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
+          </div>
         </div>
 
-        <h3 class="font-semibold text-xl mb-2">
-          Python for Data Science Certificate
-        </h3>
+        <!-- REACT -->
+        <div
+          class="snap-center flex-shrink-0 w-full w-[78vw] sm:w-[340px] p-7 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl transition flex flex-col"
+        >
+          <div class="flex items-start justify-between mb-5">
+            <div
+              class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center text-4xl"
+            >
+              ⚛️
+            </div>
 
-        <p class="text-zinc-500 dark:text-zinc-400">
-          IBM • Issued 2026
-        </p>
-
-        <div class="flex gap-3 mt-8">
-
-          <a
-            href="../certificates/JSitima-Python for Data Sceince Certificate.pdf"
-            target="_blank"
-            class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-          >
-            View Certificate
-          </a>
-
-          <a
-            href="certificates/JSitima-Python for Data Sceince Certificate.pdf"
-            download
-            class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-          >
-            <i class="fa-solid fa-download"></i>
-            Download
-          </a>
-
-        </div>
-
-      </div>
-
-      <!-- REACT -->
-      <div class="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl hover:-translate-y-2 transition-all">
-
-        <div class="flex items-start justify-between mb-6">
-
-          <div class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center text-4xl">
-            ⚛️
+            <span
+              class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full"
+            >
+              Verified
+            </span>
           </div>
 
-          <span class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full">
-            Verified
-          </span>
+          <h3 class="font-semibold text-xl mb-2">React JS Certificate</h3>
+          <p class="text-zinc-500 dark:text-zinc-400">
+            Great Learning • Issued 2025
+          </p>
 
+          <div class="mt-auto pt-6 flex gap-3">
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition"
+            >
+              View
+            </a>
+
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
+          </div>
         </div>
 
-        <h3 class="font-semibold text-xl mb-2">
-          React JS Certificate
-        </h3>
+        <!-- MYSQL -->
+        <div
+          class="snap-center flex-shrink-0 w-full w-[78vw] sm:w-[340px] p-7 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl transition flex flex-col"
+        >
+          <div class="flex items-start justify-between mb-5">
+            <div
+              class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                class="w-8 h-8"
+              />
+            </div>
 
-        <p class="text-zinc-500 dark:text-zinc-400">
-          Great Learning • Issued 2025
-        </p>
-
-        <div class="flex gap-3 mt-8">
-
-          <a
-            href="../certificates/JSitima-ReactJS Certificate.pdf"
-            target="_blank"
-            class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-          >
-            View Certificate
-          </a>
-
-          <a
-            href="../certificates/JSitima-ReactJS Certificate.pdf"
-            download
-            class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-          >
-            <i class="fa-solid fa-download"></i>
-            Download
-          </a>
-
-        </div>
-
-      </div>
-
-      <!-- MYSQL -->
-      <div class="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-xl hover:-translate-y-2 transition-all">
-
-        <div class="flex items-start justify-between mb-6">
-
-          <div class="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-              class="w-8 h-8"
-              alt="MySQL"
-            />
+            <span
+              class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full"
+            >
+              Verified
+            </span>
           </div>
 
-          <span class="text-xs font-medium px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full">
-            Verified
-          </span>
+          <h3 class="font-semibold text-xl mb-2">MySQL Certificate</h3>
+          <p class="text-zinc-500 dark:text-zinc-400">
+            Great Learning • Issued 2025
+          </p>
 
+          <div class="mt-auto pt-6 flex gap-3">
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition"
+            >
+              View
+            </a>
+
+            <a
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
+          </div>
         </div>
-
-        <h3 class="font-semibold text-xl mb-2">
-          MySQL Certificate
-        </h3>
-
-        <p class="text-zinc-500 dark:text-zinc-400">
-          Great Learning • Issued 2025
-        </p>
-
-        <div class="flex gap-3 mt-8">
-
-          <a
-            href="../certificates/JSitima-MYSQL Certificate.pdf"
-            target="_blank"
-            class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-          >
-            View Certificate
-          </a>
-
-          <a
-            href="../certificates/JSitima-MYSQL Certificate.pdf"
-            download
-            class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-          >
-            <i class="fa-solid fa-download"></i>
-            Download
-          </a>
-
-        </div>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
