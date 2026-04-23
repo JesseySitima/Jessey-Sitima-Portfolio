@@ -11,7 +11,7 @@
           04 — FOUNDATION
         </span>
 
-        <h2 class="heading-font text-5xl font-semibold tracking-tighter mt-3">
+        <h2 class="heading-font text-4xl font-semibold tracking-tighter mt-3">
           Degrees & Certificates
         </h2>
       </div>
@@ -28,18 +28,21 @@
 
     <!-- SLIDER WRAPPER -->
     <div class="relative px-0 md:px-16">
-      <!-- MOBILE SWIPE HINT -->
+      <!-- MOBILE SWIPE / BACK INDICATOR -->
       <div class="md:hidden flex justify-end mb-3 pr-2">
-        <span
-          class="text-[11px] font-medium text-[#0A66C2] px-3 py-1"
+        <button
+          id="cert-mobile-hint"
+          class="text-[11px] font-medium text-[#0A66C2] px-3 py-1 flex items-center gap-2"
         >
-          Swipe for more
-        </span>
+          <span id="cert-hint-text"> Swipe for more </span>
+
+          <i id="cert-hint-icon" class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
       <!-- LEFT BUTTON -->
       <button
         id="cert-prev"
-        class="hidden md:flex absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition"
+        class="hidden md:flex absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition-all duration-300"
       >
         <i class="fa-solid fa-chevron-left"></i>
       </button>
@@ -47,7 +50,7 @@
       <!-- RIGHT BUTTON -->
       <button
         id="cert-next"
-        class="hidden md:flex absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition"
+        class="hidden md:flex absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition-all duration-300"
       >
         <i class="fa-solid fa-chevron-right"></i>
       </button>
@@ -133,22 +136,22 @@
           <p class="text-zinc-500 dark:text-zinc-400">IBM • Issued 2026</p>
 
           <div class="mt-auto pt-6 flex gap-3">
-           <a
-                href="certificates/JSitima-R-for-Data-Sceince-Certificate.pdf"
-                target="_blank"
-                class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-              >
-                View 
-              </a>
+            <a
+              href="certificates/JSitima-R-for-Data-Sceince-Certificate.pdf"
+              target="_blank"
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
+            >
+              View
+            </a>
 
-              <a
-                href="certificates/JSitima-R-for-Data-Sceince-Certificate.pdf"
-                download
-                class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-              >
-                <i class="fa-solid fa-download"></i>
-                Download
-              </a>
+            <a
+              href="certificates/JSitima-R-for-Data-Sceince-Certificate.pdf"
+              download
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
           </div>
         </div>
 
@@ -179,22 +182,22 @@
           <p class="text-zinc-500 dark:text-zinc-400">IBM • Issued 2026</p>
 
           <div class="mt-auto pt-6 flex gap-3">
-             <a
-                href="certificates/JSitima-Python-for-Data-Sceince-Certificate.pdf"
-                target="_blank"
-                class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-              >
-                View
-              </a>
+            <a
+              href="certificates/JSitima-Python-for-Data-Sceince-Certificate.pdf"
+              target="_blank"
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
+            >
+              View
+            </a>
 
-              <a
-                href="certificates/JSitima-Python-for-Data-Sceince-Certificate.pdf"
-                download
-                class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-              >
-                <i class="fa-solid fa-download"></i>
-                Download
-              </a>
+            <a
+              href="certificates/JSitima-Python-for-Data-Sceince-Certificate.pdf"
+              download
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
           </div>
         </div>
 
@@ -222,22 +225,22 @@
           </p>
 
           <div class="mt-auto pt-6 flex gap-3">
-             <a
-                href="certificates/JSitima-ReactJS-Certificate.pdf"
-                target="_blank"
-                class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-              >
-                View 
-              </a>
+            <a
+              href="certificates/JSitima-ReactJS-Certificate.pdf"
+              target="_blank"
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
+            >
+              View
+            </a>
 
-              <a
-                href="certificates/JSitima-ReactJS-Certificate.pdf"
-                download
-                class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-              >
-                <i class="fa-solid fa-download"></i>
-                Download
-              </a>
+            <a
+              href="certificates/JSitima-ReactJS-Certificate.pdf"
+              download
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
           </div>
         </div>
 
@@ -269,21 +272,21 @@
 
           <div class="mt-auto pt-6 flex gap-3">
             <a
-                href="certificates/JSitima-MYSQL-Certificate.pdf"
-                target="_blank"
-                class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
-              >
-                View
-              </a>
+              href="certificates/JSitima-MYSQL-Certificate.pdf"
+              target="_blank"
+              class="flex-1 text-center py-3 text-sm font-medium border border-[#0A66C2] text-[#0A66C2] rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all"
+            >
+              View
+            </a>
 
-              <a
-                href="certificates/JSitima-MYSQL-Certificate.pdf"
-                download
-                class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
-              >
-                <i class="fa-solid fa-download"></i>
-                Download
-              </a>
+            <a
+              href="certificates/JSitima-MYSQL-Certificate.pdf"
+              download
+              class="flex-1 text-center py-3 text-sm font-medium bg-[#0A66C2] text-white rounded-2xl hover:bg-[#0A66C2]/90 transition-all flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download
+            </a>
           </div>
         </div>
       </div>
