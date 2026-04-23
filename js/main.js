@@ -11,7 +11,11 @@ function loadComponent(id, file, callback) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  loadComponent("navbar", "components/navbar.html");
+  loadComponent(
+  "navbar",
+  "components/navbar.html",
+  initMobileMenu
+);
 
   loadComponent("hero", "components/hero.html");
 
