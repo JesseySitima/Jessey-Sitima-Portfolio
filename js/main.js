@@ -18,40 +18,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadComponent("qualifications", "components/qualifications.html");
 
- loadComponent("badges", "components/badges.html", () => {
-  setTimeout(() => {
-    initSlider(
-      "badge-slider",
-      "badge-prev",
-      "badge-next",
-      "badge-mobile-hint",
-      "badge-hint-text",
-      "badge-hint-icon"
-    );
-  }, 100);
-});
+  loadComponent("badges", "components/badges.html", () => {
+    setTimeout(() => {
+      initSlider(
+        "badge-slider",
+        "badge-prev",
+        "badge-next",
+        "badge-mobile-hint",
+        "badge-hint-text",
+        "badge-hint-icon",
+      );
+    }, 100);
+  });
 
-  loadComponent("projects", "components/projects.html");
+  loadComponent("projects", "components/projects.html", () => {
+
+  initProjectTabs();
+
+  setTimeout(() => {
+
+    initSlider(
+      "project-slider",
+      "project-prev",
+      "project-next",
+      "project-mobile-hint",
+      "project-hint-text",
+      "project-hint-icon"
+    );
+
+  }, 100);
+
+});
 
   loadComponent("experience", "components/experience.html");
 
-loadComponent("education", "components/education.html", () => {
-
-  // Wait for layout to finish
-  setTimeout(() => {
-
-    initSlider(
-      "cert-slider",
-      "cert-prev",
-      "cert-next",
-      "cert-mobile-hint",
-      "cert-hint-text",
-      "cert-hint-icon"
-    );
-
-  }, 100);
-
-});
+  loadComponent("education", "components/education.html", () => {
+    // Wait for layout to finish
+    setTimeout(() => {
+      initSlider(
+        "cert-slider",
+        "cert-prev",
+        "cert-next",
+        "cert-mobile-hint",
+        "cert-hint-text",
+        "cert-hint-icon",
+      );
+    }, 100);
+  });
 
   loadComponent("contact", "components/contact.html");
 

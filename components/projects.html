@@ -3,196 +3,277 @@
   id="projects"
   class="py-24 bg-white dark:bg-zinc-900 border-t border-zinc-100 dark:border-zinc-800"
 >
-<div class="max-w-7xl mx-auto px-8">
+ <div class="max-w-7xl mx-auto px-8">
+
   <!-- HEADER -->
   <span class="text-[#0A66C2] text-sm font-semibold tracking-widest">
     03 — WORK
   </span>
 
-  <h2 class="heading-font text-4xl font-semibold tracking-tighter mt-3 mb-12">
+  <h2 class="heading-font text-4xl font-semibold tracking-tighter mt-3 mb-8">
     Projects that prove my skills
   </h2>
 
-  <!-- GRID -->
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!-- MOBILE SCROLLABLE TABS -->
+  <div class="relative mb-12">
 
-    <!-- PROJECT 1 -->
-    <div class="project-card bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden hover:shadow-xl transition-all">
+    <div
+      class="flex gap-3 overflow-x-auto scrollbar-hide whitespace-nowrap snap-x snap-mandatory pb-2"
+    >
 
-      <!-- VISUAL -->
-      <div class="h-64 relative bg-gradient-to-br from-[#0A66C2] to-blue-900 flex items-center justify-center">
+      <!-- ALL (DEFAULT ACTIVE) -->
+      <button
+        class="tab-btn flex-shrink-0 snap-start px-6 py-2 rounded-2xl border transition-all duration-300 border-[#0A66C2] bg-[#0A66C2] text-white"
+        data-filter="all"
+      >
+        All
+      </button>
 
-        <p class="text-white text-3xl font-semibold heading-font text-center px-6">
-          Project Screenshot / Demo
-        </p>
+      <!-- WEB -->
+      <button
+        class="tab-btn flex-shrink-0 snap-start px-6 py-2 rounded-2xl border transition-all duration-300 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300"
+        data-filter="web"
+      >
+        Web Apps
+      </button>
 
-      </div>
+      <!-- MOBILE -->
+      <button
+        class="tab-btn flex-shrink-0 snap-start px-6 py-2 rounded-2xl border transition-all duration-300 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300"
+        data-filter="mobile"
+      >
+        Mobile Apps
+      </button>
 
-      <!-- CONTENT -->
-      <div class="p-8">
-
-        <h3 class="font-semibold text-2xl">
-          Project Name
-        </h3>
-
-        <p class="text-zinc-600 dark:text-zinc-400 mt-3 line-clamp-3">
-          Built with Python, IBM Cloud, and machine learning APIs to solve real-world data problems with automation and prediction.
-        </p>
-
-        <!-- TAGS -->
-        <div class="flex gap-2 mt-6 flex-wrap">
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            Python
-          </span>
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            IBM Cloud
-          </span>
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            Machine Learning
-          </span>
-
-        </div>
-
-        <!-- BUTTONS -->
-        <div class="flex gap-4 mt-8">
-
-          <a
-            href="#"
-            class="flex-1 text-center py-4 rounded-2xl border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all font-medium"
-          >
-            Live Demo
-          </a>
-
-          <a
-            href="#"
-            class="flex-1 text-center py-4 rounded-2xl border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white transition-all font-medium"
-          >
-            View Code
-          </a>
-
-        </div>
-
-      </div>
+      <!-- AI -->
+      <button
+        class="tab-btn flex-shrink-0 snap-start px-6 py-2 rounded-2xl border transition-all duration-300 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300"
+        data-filter="ai"
+      >
+        AI Systems
+      </button>
 
     </div>
 
-    <!-- PROJECT 2 (duplicate style) -->
-    <div class="project-card bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden hover:shadow-xl transition-all">
-
-      <div class="h-64 bg-gradient-to-br from-purple-600 to-indigo-900 flex items-center justify-center">
-        <p class="text-white text-3xl font-semibold heading-font px-6 text-center">
-          Web App Preview
-        </p>
-      </div>
-
-      <div class="p-8">
-
-        <h3 class="font-semibold text-2xl">
-          Portfolio Dashboard
-        </h3>
-
-        <p class="text-zinc-600 dark:text-zinc-400 mt-3 line-clamp-3">
-          A personal dashboard to track projects, certificates, and learning progress with a modern UI.
-        </p>
-
-        <div class="flex gap-2 mt-6 flex-wrap">
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            React
-          </span>
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            Tailwind
-          </span>
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            Firebase
-          </span>
-
-        </div>
-
-        <div class="flex gap-4 mt-8">
-
-          <a
-            href="#"
-            class="flex-1 text-center py-4 rounded-2xl border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all font-medium"
-          >
-            Live Demo
-          </a>
-
-          <a
-            href="#"
-            class="flex-1 text-center py-4 rounded-2xl border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white transition-all font-medium"
-          >
-            View Code
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- PROJECT 3 -->
-    <div class="project-card bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden hover:shadow-xl transition-all">
-
-      <div class="h-64 bg-gradient-to-br from-emerald-600 to-teal-900 flex items-center justify-center">
-        <p class="text-white text-3xl font-semibold heading-font px-6 text-center">
-          AI System Demo
-        </p>
-      </div>
-
-      <div class="p-8">
-
-        <h3 class="font-semibold text-2xl">
-          Smart Prediction System
-        </h3>
-
-        <p class="text-zinc-600 dark:text-zinc-400 mt-3 line-clamp-3">
-          AI-powered system that analyzes data patterns and generates intelligent predictions for decision support.
-        </p>
-
-        <div class="flex gap-2 mt-6 flex-wrap">
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            AI
-          </span>
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            Python
-          </span>
-
-          <span class="text-xs px-4 py-2 bg-zinc-100 dark:bg-zinc-800 rounded-2xl">
-            Data Science
-          </span>
-
-        </div>
-
-        <div class="flex gap-4 mt-8">
-
-          <a
-            href="#"
-            class="flex-1 text-center py-4 rounded-2xl border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all font-medium"
-          >
-            Live Demo
-          </a>
-
-          <a
-            href="#"
-            class="flex-1 text-center py-4 rounded-2xl border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white transition-all font-medium"
-          >
-            View Code
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
+    <!-- RIGHT FADE EDGE (premium look) -->
+    <div
+      class="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-white dark:from-zinc-900"
+    ></div>
 
   </div>
-</div>
+
+    <!-- GRID -->
+    <!-- PROJECT SLIDER WRAPPER -->
+<div class="relative px-0 md:px-16">
+
+  <!-- MOBILE SWIPE HINT -->
+  <div class="md:hidden flex justify-end mb-3 pr-2">
+    <button
+      id="project-mobile-hint"
+      class="text-[11px] font-medium text-[#0A66C2] px-3 py-1 flex items-center gap-2"
+    >
+      <span id="project-hint-text">
+        Swipe for more
+      </span>
+
+      <i
+        id="project-hint-icon"
+        class="fa-solid fa-arrow-right"
+      ></i>
+    </button>
+  </div>
+
+  <!-- LEFT BUTTON -->
+  <button
+    id="project-prev"
+    class="hidden md:flex absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition-all duration-300"
+  >
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <!-- RIGHT BUTTON -->
+  <button
+    id="project-next"
+    class="hidden md:flex absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-lg items-center justify-center hover:bg-[#0A66C2] hover:text-white transition-all duration-300"
+  >
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+  <!-- PROJECT SCROLL ROW -->
+  <div
+    id="project-slider"
+    class="flex gap-6 overflow-x-auto md:overflow-hidden scroll-smooth scrollbar-hide snap-x snap-mandatory px-2"
+  >
+   <!-- ================= WEB APPS ================= -->
+
+      <div
+        class="project-card snap-center flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[calc((100%-3rem)/3)] 
+        bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden 
+        hover:-translate-y-2 hover:shadow-2xl transition-all"
+        data-category="web"
+      >
+
+        <div class="h-52 bg-gradient-to-br from-[#0A66C2] to-indigo-900 flex items-center justify-center">
+          <h3 class="text-white text-xl font-semibold text-center px-6">
+            BEAN Clinic Management System
+          </h3>
+        </div>
+
+        <div class="p-7">
+          <p class="text-sm text-zinc-600 dark:text-zinc-400">
+            A clinic information system for BEAN Clinic to manage patients, appointments, and daily operations efficiently.
+          </p>
+
+          <div class="flex gap-2 mt-5 flex-wrap">
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Web App</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Database</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">System Design</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ================= WEB 2 ================= -->
+
+      <div
+        class="project-card snap-center flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[calc((100%-3rem)/3)] 
+        bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden 
+        hover:-translate-y-2 hover:shadow-2xl transition-all"
+        data-category="web"
+      >
+
+        <div class="h-52 bg-gradient-to-br from-purple-600 to-indigo-900 flex items-center justify-center">
+          <h3 class="text-white text-xl font-semibold text-center px-6">
+            KluggerSoft Hospital System
+          </h3>
+        </div>
+
+        <div class="p-7">
+          <p class="text-sm text-zinc-600 dark:text-zinc-400">
+            Collaborative hospital information system built for Action Medeor to manage hospital workflows and patient data.
+          </p>
+
+          <div class="flex gap-2 mt-5 flex-wrap">
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Collaboration</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Healthcare</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">System</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ================= MOBILE 1 ================= -->
+
+      <div
+        class="project-card snap-center flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[calc((100%-3rem)/3)] 
+        bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden 
+        hover:-translate-y-2 hover:shadow-2xl transition-all"
+        data-category="mobile"
+      >
+
+        <div class="h-52 bg-gradient-to-br from-emerald-600 to-teal-900 flex items-center justify-center">
+          <h3 class="text-white text-xl font-semibold text-center px-6">
+            Yakumudzi Taxi App
+          </h3>
+        </div>
+
+        <div class="p-7">
+          <p class="text-sm text-zinc-600 dark:text-zinc-400">
+            Ride-hailing mobile app built with React Native and MongoDB for booking and managing taxi services.
+          </p>
+
+          <div class="flex gap-2 mt-5 flex-wrap">
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">React Native</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">MongoDB</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Mobile App</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ================= MOBILE 2 ================= -->
+
+      <div
+        class="project-card snap-center flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[calc((100%-3rem)/3)] 
+        bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden 
+        hover:-translate-y-2 hover:shadow-2xl transition-all"
+        data-category="mobile"
+      >
+
+        <div class="h-52 bg-gradient-to-br from-pink-500 to-orange-500 flex items-center justify-center">
+          <h3 class="text-white text-xl font-semibold text-center px-6">
+            Stock Count App (Action Medeor)
+          </h3>
+        </div>
+
+        <div class="p-7">
+          <p class="text-sm text-zinc-600 dark:text-zinc-400">
+            Offline inventory tracking app built in React Native using local storage for stock counting operations.
+          </p>
+
+          <div class="flex gap-2 mt-5 flex-wrap">
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Offline</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">React Native</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ================= MOBILE 3 ================= -->
+
+      <div
+        class="project-card snap-center flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[calc((100%-3rem)/3)] 
+        bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden 
+        hover:-translate-y-2 hover:shadow-2xl transition-all"
+        data-category="mobile"
+      >
+
+        <div class="h-52 bg-gradient-to-br from-yellow-500 to-red-500 flex items-center justify-center">
+          <h3 class="text-white text-xl font-semibold text-center px-6">
+            Kuwerenga Phonics App
+          </h3>
+        </div>
+
+        <div class="p-7">
+          <p class="text-sm text-zinc-600 dark:text-zinc-400">
+            Educational phonics learning app built in React Native to improve reading skills for early learners.
+          </p>
+
+          <div class="flex gap-2 mt-5 flex-wrap">
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Education</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">React Native</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ================= AI ================= -->
+
+      <div
+        class="project-card snap-center flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[calc((100%-3rem)/3)] 
+        bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl overflow-hidden 
+        hover:-translate-y-2 hover:shadow-2xl transition-all"
+        data-category="ai"
+      >
+
+        <div class="h-52 bg-gradient-to-br from-[#0A66C2] to-blue-900 flex items-center justify-center">
+          <h3 class="text-white text-xl font-semibold text-center px-6">
+            Lilongwe Rental Price Prediction
+          </h3>
+        </div>
+
+        <div class="p-7">
+          <p class="text-sm text-zinc-600 dark:text-zinc-400">
+            AI dashboard that analyzes rental data in Lilongwe and predicts property prices using machine learning models.
+          </p>
+
+          <div class="flex gap-2 mt-5 flex-wrap">
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">AI</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Prediction</span>
+            <span class="text-xs px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">Data Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

@@ -116,7 +116,10 @@ function initSlider(
     updateUI();
   });
 
-  // Initial state
+ // Initial state
+updateUI();
 
-  updateUI();
+// Expose update function so other scripts can refresh UI
+slider.updateSliderUI = updateUI;
+
 }
