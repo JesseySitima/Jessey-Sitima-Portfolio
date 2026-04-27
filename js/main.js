@@ -31,9 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 100);
   });
 
-  loadComponent("projects", "components/projects.html", () => {
+ loadComponent("projects", "components/projects.html", () => {
 
   initProjectTabs();
+
+  initVideoModal();
 
   setTimeout(() => {
 
