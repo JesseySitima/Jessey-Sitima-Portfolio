@@ -52,7 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-  loadComponent("experience", "components/experience.html");
+ loadComponent(
+  "experience",
+  "components/experience.html",
+  initExperienceToggle
+);
 
   loadComponent("education", "components/education.html", () => {
     // Wait for layout to finish
